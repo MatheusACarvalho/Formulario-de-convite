@@ -1,0 +1,22 @@
+aside {
+  & #aside-content {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  & img {
+   width: 2.866rem;
+   height: 3rem;
+   padding-block-end: 1rem;
+  }
+ 
+  & h1 {
+   font: var(--logo);
+   color: var(--pink-color);
+   padding-block-end: .25rem;
+  }
+  & p{
+    font: var(--body-md);
+    color: var(--text-heading);
+  }
+ }
+ 
