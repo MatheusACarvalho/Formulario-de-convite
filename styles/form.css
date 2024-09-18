@@ -1,0 +1,31 @@
+@import url(fields/index.css);
+
+form {
+  & legend{
+    font: var(--h-sm);
+    color: var(--text-heading);
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+
+    & svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      stroke: var(--input-placeholder);
+    }
+  }
+
+  input[type="datetime-local"] {
+    text-transform: uppercase;
+    color: var(--input-placeholder);
+  }
+
+
+  fieldset {
+    border: none;
+    display: grid;
+    gap: .75rem;
+  }
+}
+

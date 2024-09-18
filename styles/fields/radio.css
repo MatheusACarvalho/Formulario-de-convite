@@ -1,0 +1,73 @@
+
+.radio-content {
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem; 
+
+  label {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+}
+.radio-wrapper {
+  border-radius: .5rem;
+  overflow: hidden;
+  padding: .2rem;
+ 
+  align-items: center;
+
+  border-radius: .5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+
+  
+
+  input {
+    display: none;
+  }
+
+}
+
+.radio-inner {
+  display: flex;
+  gap:.5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  
+  height: 2.5rem;
+  width: 8.2rem;
+  
+
+  
+  
+  border-radius: .5rem;
+
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  label {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  &:hover, &:focus-within, &:checked {
+    color: var(--text-heading);
+    background-color: var(--input-stroke);
+    stroke: var(--brand-light);
+  }
+  
+}

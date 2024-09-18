@@ -63,3 +63,11 @@ body {
 .flex {
   display: flex;
 }
+
+.flex-1 {
+  flex: 1;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
