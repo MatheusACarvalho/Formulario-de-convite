@@ -9,19 +9,72 @@
   
     display: block;
     margin-bottom: .25rem;
+
+   
+
   }
 }
 
 
 input, textarea, select {
+  color: white;
   appearance: none;
   width: 100%;
   border-radius: .5rem;
   border: 2px solid transparent;
-  outline: 1px solid var(--input-stroke);
+  outline: var(--input-stroke) solid 1px;
   background-color: var(--input-base);
 
   padding: .75rem 1rem;
-
   font: var(--body-md);
+
 }
+
+
+input[type="text"]:hover, 
+input[type="datetime-local"]:hover,
+input[type="email"]:hover, 
+input[type="tel"]:hover,  
+textarea:hover {
+    outline: var(--brand-light) solid 1px;
+}
+
+
+ input[type="text"]:focus-within,
+ input[type="email"]:focus-within,
+ input[type="tel"]:focus-within,
+input[type="datetime-local"]:focus-within, 
+textarea:focus-within {
+    outline: var(--brand-light) solid 1px;
+}
+
+.error-message {
+  color: var(--danger);
+  font: var(--body-xs);
+  display: none; 
+}
+
+.required {
+  input[type="text"]:required:invalid {
+    border: 1px solid var(--danger);
+    
+  }
+}
+
+input:required:invalid + .error-message {
+    display: block;
+}
+
+
+.error-message::before {
+  content: '';
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url(../../assets/icons/circle-alert.svg);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: .313rem;
+}
+
+

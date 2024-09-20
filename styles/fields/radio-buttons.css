@@ -1,0 +1,59 @@
+.radio-button-container{
+  padding-block-start: 1.75rem;
+  padding-block-end: 1.75rem;
+}
+.radio-button{
+  padding-block-start: 1rem;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.buttons {
+  height: 6.438rem;
+  width: 8.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: .25rem .25rem .5rem;
+  gap: .5rem;
+
+
+  background: #2D3136;
+  border: 1px solid #363B40;
+  border-radius: .5rem;
+
+  input[type="radio"]:checked {
+    outline: var(--brand-light) solid 1px;
+    border-radius: .26rem;
+    outline-offset: .41rem;
+  }
+
+}
+
+.inner-button {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  position: relative;
+  img {
+    width: 7.875rem;
+    height: 4rem;
+  }
+
+  input {
+    display: none;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  
+}

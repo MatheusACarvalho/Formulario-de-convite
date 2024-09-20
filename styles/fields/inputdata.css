@@ -1,0 +1,36 @@
+.input-data-container{
+  align-items: center;
+  gap: 0.75rem;
+
+}
+
+.data-inner {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  & button {
+
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 7.438rem;
+    height: 2.5rem;
+    font: var(--body-sm);
+    color: var(--text-heading);
+    background-color: var(--shape-button);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+            
+  }
+
+  input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+  
+  
+}

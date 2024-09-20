@@ -1,6 +1,7 @@
 @import url(fields/index.css);
 
 form {
+ 
   & legend{
     font: var(--h-sm);
     color: var(--text-heading);
@@ -27,5 +28,12 @@ form {
     display: grid;
     gap: .75rem;
   }
+
+  .personalization, .contact{
+    legend {
+      padding-block-start: 3rem;
+    }
+  }
+  
 }
 

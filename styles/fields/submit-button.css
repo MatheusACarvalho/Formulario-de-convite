@@ -1,0 +1,21 @@
+.submit-button {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: .75rem;
+
+width: 11.063rem;
+height: 3rem;
+
+background: var(--brand-dark);
+border-radius: .5rem;
+
+font: var(--body-md) ;
+color: var(--text-heading);
+
+}
+.submit-button-container{
+  justify-content: flex-end;
+  margin-block-start: 3rem;
+  margin-block-end: 5rem;
+}
